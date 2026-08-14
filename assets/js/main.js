@@ -59,3 +59,13 @@ function sendEnquiry(e, form){
   form.innerHTML = '<div style="text-align:center;padding:2rem 0"><i class="bi bi-check-circle-fill" style="font-size:2.6rem;color:var(--teal)"></i><h5 style="color:var(--navy);font-weight:700;margin-top:1rem">Thank you!</h5><p style="color:var(--muted)">Your enquiry has been received. We will contact you shortly at the details you provided.</p></div>';
   return false;
 }
+
+// ---------- Mobile menu: close on tap, without blocking navigation ----------
+// (data-bs-dismiss on an <a> makes Bootstrap call preventDefault, which kills links)
+document.querySelectorAll('#mobileNav a').forEach(a => {
+  a.addEventListener('click', () => {
+    const oc = document.getElementById('mobileNav');
+    const inst = bootstrap.Offcanvas.getInstance(oc);
+    if (inst) inst.hide();
+  });
+});
