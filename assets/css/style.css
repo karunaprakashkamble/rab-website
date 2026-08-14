@@ -138,7 +138,7 @@ h1,h2,h3,h4,h5,.font-display{font-family:'Poppins',sans-serif}
 .slide-bg{
   position:absolute;inset:-24px;z-index:0;
   background-size:cover;background-position:center;
-  filter:blur(0px) brightness(.95) saturate(1.05);
+  filter:blur(0px) brightness(.98) saturate(1.05);
   transform:scale(1.06);
 }
 .bg-1{background-image:url('../../images/school-building-hd.jpg')}
