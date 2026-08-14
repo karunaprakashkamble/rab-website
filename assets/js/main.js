@@ -60,12 +60,30 @@ function sendEnquiry(e, form){
   return false;
 }
 
-// ---------- Mobile menu: close on tap, without blocking navigation ----------
-// (data-bs-dismiss on an <a> makes Bootstrap call preventDefault, which kills links)
+// ---------- Mobile menu ----------
+// 1. Same-page anchors: close the menu so the section is visible.
+//    Cross-page links: do NOT touch the offcanvas — the browser is navigating away,
+//    and hiding mid-navigation can leave the dark backdrop stuck over the next page.
 document.querySelectorAll('#mobileNav a').forEach(a => {
   a.addEventListener('click', () => {
-    const oc = document.getElementById('mobileNav');
-    const inst = bootstrap.Offcanvas.getInstance(oc);
-    if (inst) inst.hide();
+    const href = a.getAttribute('href') || '';
+    if (href.startsWith('#')) {
+      const oc = document.getElementById('mobileNav');
+      const inst = bootstrap.Offcanvas.getInstance(oc);
+      if (inst) inst.hide();
+    }
   });
 });
+
+// 2. Safety net: clear any leftover backdrop / scroll-lock on load and on
+//    back-forward cache restore (Chrome can restore a page with the backdrop still up).
+function clearOffcanvasLeftovers(){
+  document.querySelectorAll('.offcanvas-backdrop').forEach(el => el.remove());
+  document.body.classList.remove('offcanvas-backdrop');
+  document.body.style.overflow = '';
+  document.body.style.paddingRight = '';
+  const oc = document.getElementById('mobileNav');
+  if (oc) oc.classList.remove('show', 'showing');
+}
+window.addEventListener('pageshow', clearOffcanvasLeftovers);
+clearOffcanvasLeftovers();
