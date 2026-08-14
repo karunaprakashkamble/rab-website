@@ -1,0 +1,207 @@
+/* ============================================================
+   VISION & MISSION PAGE — page-specific styles
+   (loads after style.css, shares the same design system)
+   ============================================================ */
+
+/* ---------- Page hero ---------- */
+.page-hero{
+  position:relative;overflow:hidden;color:#fff;
+  background:linear-gradient(115deg,#081a35 0%,#0b2447 45%,#14417b 100%);
+  padding:72px 0 112px;
+}
+.page-hero::before{
+  content:"";position:absolute;inset:0;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='64' viewBox='0 0 56 64'%3E%3Cpath d='M28 2 52 16v32L28 62 4 48V16Z' fill='none' stroke='%23ffffff' stroke-opacity='.07' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+.page-hero .container{position:relative;z-index:2}
+.page-hero h1{font-weight:800;font-size:clamp(2rem,4.2vw,3rem)}
+.page-hero h1 .accent{color:var(--gold)}
+.page-hero p{color:#c7d5ec;max-width:680px;margin:0}
+.ph-glow{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;z-index:0}
+.ph-glow.g1{width:380px;height:380px;background:rgba(247,169,19,.32);right:-100px;top:-130px;animation:glowMove 9s ease-in-out infinite alternate}
+.ph-glow.g2{width:320px;height:320px;background:rgba(26,111,212,.5);left:-90px;bottom:-110px;animation:glowMove 11s ease-in-out infinite alternate-reverse}
+@keyframes glowMove{to{transform:translate(46px,32px)}}
+.ph-curve{position:absolute;left:0;right:0;bottom:-1px;line-height:0;z-index:2}
+.ph-curve svg{width:100%;height:70px;display:block}
+
+/* ---------- Sticky section sub-nav ---------- */
+.sub-nav{
+  position:sticky;top:96px;z-index:20;background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid #e8edf5;box-shadow:0 2px 14px rgba(11,36,71,.06);
+}
+.sub-nav .inner{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;padding:.75rem 0}
+.sub-nav a{
+  display:inline-flex;align-items:center;gap:.45rem;text-decoration:none;
+  font-family:'Poppins',sans-serif;font-weight:600;font-size:.85rem;color:var(--navy);
+  border:1.5px solid #dde5f0;border-radius:999px;padding:.45rem 1.15rem;transition:all .28s ease;
+}
+.sub-nav a i{color:var(--gold);font-size:.9rem}
+.sub-nav a:hover,.sub-nav a.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.sub-nav a:hover i,.sub-nav a.active i{color:var(--gold)}
+
+/* ---------- Decorative floaters (shared) ---------- */
+.vshape{
+  position:absolute;border-radius:50%;opacity:.4;filter:blur(1px);z-index:0;
+  animation:drift 11s ease-in-out infinite;
+}
+.vs1{width:110px;height:110px;background:var(--gold-soft);border:3px solid rgba(247,169,19,.4);top:9%;left:3%}
+.vs2{width:66px;height:66px;background:var(--blue-soft);border:3px solid rgba(26,111,212,.3);top:16%;right:5%;animation-delay:2s}
+.vs3{width:54px;height:54px;background:var(--teal-soft);border:3px solid rgba(13,148,136,.3);bottom:10%;left:8%;animation-delay:4s}
+
+/* ---------- Vision ---------- */
+.vision-sec{position:relative;overflow:hidden;background:var(--bg)}
+.vision-sec::before{
+  content:"";position:absolute;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='64' viewBox='0 0 56 64'%3E%3Cpath d='M28 2 52 16v32L28 62 4 48V16Z' fill='none' stroke='%230b2447' stroke-opacity='.04' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+.vision-panel{
+  background:linear-gradient(150deg,#0b2447 0%,#14417b 60%,#1a6fd4 100%);
+  border-radius:1.6rem;color:#fff;padding:2.8rem 2.6rem;position:relative;overflow:hidden;
+  box-shadow:0 24px 60px rgba(11,36,71,.32);
+}
+.vision-panel::before{
+  content:"";position:absolute;inset:0;opacity:.45;
+  background-image:radial-gradient(rgba(255,255,255,.12) 1.5px,transparent 1.5px);background-size:22px 22px;
+}
+.vision-panel::after{
+  content:"";position:absolute;right:-80px;bottom:-80px;width:260px;height:260px;border-radius:50%;
+  background:radial-gradient(circle,rgba(247,169,19,.3),transparent 65%);
+}
+.vision-panel > *{position:relative;z-index:1}
+.vision-icon{
+  width:66px;height:66px;border-radius:1.2rem;margin-bottom:1.3rem;
+  background:rgba(247,169,19,.2);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;font-size:1.8rem;
+  animation:icBob 4s ease-in-out infinite;
+}
+.vision-panel h2{font-family:'Poppins',sans-serif;font-weight:800;font-size:1.7rem;margin-bottom:1.1rem}
+.vision-panel p{color:#dbe6f6;font-size:1.05rem;line-height:1.85;margin:0}
+.vision-art{position:relative;height:100%;min-height:330px}
+.vision-art .va-photo{
+  position:absolute;border-radius:1.3rem;overflow:hidden;
+  border:5px solid #fff;box-shadow:var(--shadow-lg);
+}
+.vision-art .va-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.vision-art .va1{width:78%;height:220px;right:0;top:6px;transform:rotate(2deg);animation:floaty 6.5s ease-in-out infinite}
+.vision-art .va2{width:56%;height:165px;left:0;bottom:6px;transform:rotate(-4deg);animation:floaty 7.5s ease-in-out 1s infinite}
+.vision-art .va-ring{
+  position:absolute;left:6%;top:-6px;width:104px;height:104px;border-radius:50%;
+  border:3px dashed rgba(247,169,19,.7);animation:ringSpin 26s linear infinite;
+}
+
+/* ---------- Mission ---------- */
+.mission-sec{background:#fff;position:relative;overflow:hidden}
+.mission-card{
+  background:#fff;border-radius:1.2rem;padding:1.8rem 1.5rem 1.6rem;height:100%;
+  box-shadow:var(--shadow-sm);border:1px solid #eef1f7;transition:all .32s ease;
+  position:relative;overflow:hidden;
+}
+.mission-card::after{
+  content:"";position:absolute;top:0;left:0;height:4px;width:100%;
+  background:linear-gradient(90deg,var(--gold),var(--orange),var(--blue));
+  transform:scaleX(0);transform-origin:left;transition:transform .45s ease;
+}
+.mission-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-md)}
+.mission-card:hover::after{transform:scaleX(1)}
+.mission-num{
+  width:52px;height:52px;border-radius:1rem;margin-bottom:1.1rem;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Poppins',sans-serif;font-weight:800;font-size:1.2rem;color:#fff;
+  box-shadow:0 10px 22px rgba(11,36,71,.2);transition:transform .3s ease;
+}
+.mission-card:hover .mission-num{transform:scale(1.1) rotate(-6deg)}
+.mission-card p{color:#3d4a5f;font-size:.94rem;line-height:1.75;margin:0}
+.mission-card .mk{color:var(--navy);font-weight:700}
+
+/* ---------- Core values ---------- */
+.values-sec{background:var(--bg);position:relative;overflow:hidden}
+.core-card{
+  background:#fff;border-radius:1.1rem;padding:1.5rem 1rem;text-align:center;height:100%;
+  box-shadow:var(--shadow-sm);border:1px solid #eef1f7;transition:all .3s ease;
+}
+.core-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-md)}
+.core-card .ic{
+  width:58px;height:58px;border-radius:50%;margin:0 auto .9rem;
+  display:flex;align-items:center;justify-content:center;font-size:1.5rem;
+  animation:icBob 3.6s ease-in-out infinite;
+}
+.core-grid > div:nth-child(2) .ic{animation-delay:.4s}
+.core-grid > div:nth-child(3) .ic{animation-delay:.8s}
+.core-grid > div:nth-child(4) .ic{animation-delay:1.2s}
+.core-grid > div:nth-child(5) .ic{animation-delay:1.6s}
+.core-grid > div:nth-child(6) .ic{animation-delay:2s}
+.core-card:hover .ic{animation:icWiggle .65s ease}
+.core-card h5{font-weight:700;font-size:.98rem;color:var(--navy);margin:0}
+
+/* ---------- Motto ---------- */
+.motto-sec{
+  position:relative;overflow:hidden;color:#fff;
+  background:linear-gradient(120deg,#081a35 0%,#0b2447 50%,#14417b 100%);
+}
+.motto-sec::before{
+  content:"";position:absolute;inset:0;opacity:.4;
+  background-image:radial-gradient(rgba(255,255,255,.1) 1.5px,transparent 1.5px);background-size:24px 24px;
+}
+.motto-sec .container{position:relative;z-index:1}
+.motto-quote{
+  text-align:center;max-width:820px;margin:0 auto 3rem;
+}
+.motto-quote .qmark{color:var(--gold);font-size:2.8rem;line-height:1}
+.motto-quote h2{
+  font-family:'Poppins',sans-serif;font-weight:800;font-style:italic;
+  font-size:clamp(1.7rem,3.6vw,2.6rem);margin:.5rem 0 1rem;
+}
+.motto-quote h2 span{color:var(--gold)}
+.motto-quote p{color:#c7d5ec;font-size:1.02rem;line-height:1.8;margin:0}
+.motto-eyebrow{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:rgba(247,169,19,.18);border:1px solid rgba(247,169,19,.5);color:#ffd984;
+  border-radius:999px;padding:.45rem 1.15rem;font-size:.78rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+}
+.means-card{
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);
+  border-radius:1.1rem;padding:1.5rem 1.3rem;height:100%;backdrop-filter:blur(6px);
+  transition:all .32s ease;
+}
+.means-card:hover{background:rgba(255,255,255,.13);transform:translateY(-6px);border-color:rgba(247,169,19,.45)}
+.means-card .ic{
+  width:52px;height:52px;border-radius:.95rem;margin-bottom:1rem;
+  background:rgba(247,169,19,.18);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;font-size:1.35rem;
+  transition:all .3s ease;
+}
+.means-card:hover .ic{background:var(--gold);color:var(--navy);transform:rotate(-8deg) scale(1.08)}
+.means-card h5{font-weight:700;font-size:1rem;color:#fff;margin:0}
+.means-card p{color:#bccbe3;font-size:.88rem;line-height:1.7;margin:.5rem 0 0}
+
+.commit-band{
+  background:#fff;border-radius:1.4rem;padding:2.2rem 2.2rem;margin-top:3rem;
+  box-shadow:0 20px 50px rgba(0,0,0,.28);position:relative;overflow:hidden;
+}
+.commit-band::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:6px;
+  background:linear-gradient(180deg,var(--gold),var(--orange),var(--blue));
+}
+.commit-band h4{
+  font-family:'Poppins',sans-serif;font-weight:700;font-size:1.2rem;color:var(--navy);
+  display:flex;align-items:center;gap:.6rem;margin-bottom:.8rem;
+}
+.commit-band h4 i{color:var(--gold)}
+.commit-band p{color:#3d4a5f;font-size:.97rem;line-height:1.8;margin:0}
+.commit-band .hl{color:var(--navy);font-weight:700}
+
+@media (max-width: 991.98px){
+  .page-hero{padding:52px 0 92px}
+  .sub-nav{top:78px}
+  .sub-nav a{font-size:.78rem;padding:.38rem .9rem}
+  .vision-panel{padding:1.8rem 1.4rem}
+  .vision-panel h2{font-size:1.4rem}
+  .vision-art{min-height:270px;margin-top:1.5rem}
+  .vision-art .va1{height:180px}
+  .vision-art .va2{height:135px}
+  .commit-band{padding:1.6rem 1.3rem}
+}
+@media (prefers-reduced-motion: reduce){
+  .vshape,.vision-icon,.va-ring,.va-photo,.core-card .ic{animation:none}
+}

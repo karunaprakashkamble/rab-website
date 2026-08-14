@@ -1,0 +1,180 @@
+/* ============================================================
+   ABOUT US PAGE — page-specific styles
+   (loads after style.css, shares the same design system)
+   ============================================================ */
+
+/* ---------- Page hero banner ---------- */
+.page-hero{
+  position:relative;overflow:hidden;color:#fff;
+  background:linear-gradient(115deg,#081a35 0%,#0b2447 45%,#14417b 100%);
+  padding:72px 0 112px;
+}
+.page-hero h1 .accent{color:var(--gold)}
+/* soft moving glows */
+.ph-glow{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;z-index:0}
+.ph-glow.g1{width:380px;height:380px;background:rgba(247,169,19,.32);right:-100px;top:-130px;animation:glowMove 9s ease-in-out infinite alternate}
+.ph-glow.g2{width:320px;height:320px;background:rgba(26,111,212,.5);left:-90px;bottom:-110px;animation:glowMove 11s ease-in-out infinite alternate-reverse}
+@keyframes glowMove{to{transform:translate(46px,32px)}}
+/* mini stat chips */
+.hero-mini-stats{display:flex;flex-wrap:wrap;gap:.7rem}
+.mini-chip{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);
+  border-radius:999px;padding:.5rem 1.15rem;font-size:.84rem;font-weight:600;color:#e8eefa;
+}
+.mini-chip i{color:var(--gold)}
+/* floating photo cluster */
+.ph-visual{position:relative;height:370px;z-index:2}
+.ph-card{
+  position:absolute;border-radius:1.2rem;overflow:hidden;
+  border:5px solid rgba(255,255,255,.92);box-shadow:0 26px 60px rgba(0,0,0,.42);
+}
+.ph-card img{width:100%;height:100%;object-fit:cover;display:block}
+.ph-1{width:80%;height:250px;right:0;top:12px;transform:rotate(2deg);animation:floaty 6.5s ease-in-out infinite}
+.ph-2{width:52%;height:180px;left:0;bottom:2px;transform:rotate(-4deg);animation:floaty 7.5s ease-in-out 1s infinite}
+.ph-ring{
+  position:absolute;left:4%;top:-8px;width:112px;height:112px;border-radius:50%;
+  border:3px dashed rgba(247,169,19,.75);animation:ringSpin 26s linear infinite;
+}
+.ph-badge{
+  position:absolute;right:4%;bottom:-12px;z-index:3;
+  background:var(--gold);color:var(--navy);font-family:'Poppins',sans-serif;font-weight:700;
+  font-size:.85rem;border-radius:.85rem;padding:.6rem 1.15rem;transform:rotate(-3deg);
+  box-shadow:0 14px 30px rgba(247,169,19,.45);animation:stickerPulse 3s ease-in-out infinite;
+}
+/* curved bottom edge into next section */
+.ph-curve{position:absolute;left:0;right:0;bottom:-1px;line-height:0;z-index:2}
+.ph-curve svg{width:100%;height:70px;display:block}
+.page-hero::before{
+  content:"";position:absolute;inset:0;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='64' viewBox='0 0 56 64'%3E%3Cpath d='M28 2 52 16v32L28 62 4 48V16Z' fill='none' stroke='%23ffffff' stroke-opacity='.07' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+.page-hero::after{
+  content:"";position:absolute;right:-120px;top:-120px;width:340px;height:340px;border-radius:50%;
+  background:radial-gradient(circle,rgba(247,169,19,.28),transparent 65%);
+}
+.page-hero .container{position:relative;z-index:2}
+.page-hero h1{font-weight:800;font-size:clamp(2rem,4.2vw,3rem)}
+.page-hero p{color:#c7d5ec;max-width:640px;margin:0}
+.breadcrumb-line{
+  display:inline-flex;align-items:center;gap:.55rem;font-size:.85rem;font-weight:600;
+  color:#c7d5ec;margin-bottom:1rem;
+}
+.breadcrumb-line a{color:var(--gold);text-decoration:none}
+.breadcrumb-line a:hover{color:#ffca4d}
+.page-hero .admission-chip{
+  display:inline-flex;align-items:center;gap:.6rem;margin-top:1.6rem;
+  background:rgba(247,169,19,.16);border:1.5px solid rgba(247,169,19,.55);color:#ffd984;
+  border-radius:999px;padding:.55rem 1.3rem;font-weight:600;font-size:.92rem;
+}
+.page-hero .admission-chip a{color:var(--gold);font-weight:700;text-decoration:none}
+
+/* ---------- Why choose us (8 cards) ---------- */
+.why-card{
+  background:#fff;border-radius:var(--radius);padding:1.7rem 1.4rem;height:100%;
+  box-shadow:var(--shadow-sm);border:1px solid #eef1f7;position:relative;overflow:hidden;
+  transition:all .3s ease;
+}
+.why-card::after{
+  content:"";position:absolute;top:0;left:0;height:4px;width:100%;
+  background:linear-gradient(90deg,var(--gold),var(--orange),var(--blue));
+  transform:scaleX(0);transform-origin:left;transition:transform .45s ease;
+}
+.why-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-md)}
+.why-card:hover::after{transform:scaleX(1)}
+.why-card .ic{
+  width:54px;height:54px;border-radius:1rem;display:flex;align-items:center;justify-content:center;
+  font-size:1.45rem;margin-bottom:1rem;animation:icBob 3.6s ease-in-out infinite;
+}
+.why-card:hover .ic{animation:icWiggle .65s ease}
+.why-card h5{font-weight:700;font-size:1rem;color:var(--navy)}
+.why-card p{font-size:.86rem;color:var(--muted);margin:.45rem 0 0}
+.why-grid > div:nth-child(2) .ic{animation-delay:.4s}
+.why-grid > div:nth-child(3) .ic{animation-delay:.8s}
+.why-grid > div:nth-child(4) .ic{animation-delay:1.2s}
+.why-grid > div:nth-child(5) .ic{animation-delay:1.6s}
+.why-grid > div:nth-child(6) .ic{animation-delay:2s}
+.why-grid > div:nth-child(7) .ic{animation-delay:2.4s}
+.why-grid > div:nth-child(8) .ic{animation-delay:2.8s}
+
+/* ---------- FAQ accordion ---------- */
+.faq-wrap{max-width:860px;margin:0 auto}
+.faq-wrap .accordion-item{
+  border:1px solid #e8edf5;border-radius:1rem !important;overflow:hidden;
+  margin-bottom:1rem;box-shadow:var(--shadow-sm);background:#fff;
+}
+.faq-wrap .accordion-button{
+  font-family:'Poppins',sans-serif;font-weight:600;font-size:.98rem;color:var(--navy);
+  padding:1.1rem 1.4rem;background:#fff;box-shadow:none;
+}
+.faq-wrap .accordion-button:not(.collapsed){
+  background:var(--blue-soft);color:var(--blue);
+}
+.faq-wrap .accordion-button:focus{box-shadow:none;border:none}
+.faq-wrap .accordion-button::after{
+  background-image:none;content:"+";font-size:1.5rem;font-weight:600;line-height:1;
+  color:var(--gold);transform:none;display:flex;align-items:center;justify-content:center;
+  width:1.4rem;height:1.4rem;transition:transform .3s ease;
+}
+.faq-wrap .accordion-button:not(.collapsed)::after{content:"−";color:var(--blue)}
+.faq-wrap .accordion-body{color:var(--muted);font-size:.93rem;padding:1.1rem 1.4rem}
+
+/* ---------- Contact + map ---------- */
+.contact-sec{background:#fff}
+.contact-card{
+  background:var(--bg);border-radius:1.3rem;padding:2rem 1.8rem;height:100%;
+  border:1px solid #e8edf5;
+}
+.contact-card h4{font-weight:700;color:var(--navy);margin-bottom:1.3rem}
+.form-label{font-weight:600;font-size:.86rem;color:var(--navy)}
+.form-control-c{
+  width:100%;border:1.5px solid #dbe3ef;border-radius:.7rem;padding:.7rem 1rem;
+  font-size:.93rem;color:var(--ink);background:#fff;outline:none;
+  transition:border-color .25s ease, box-shadow .25s ease;
+}
+.form-control-c:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(247,169,19,.15)}
+textarea.form-control-c{min-height:120px;resize:vertical}
+.btn-submit{
+  background:var(--navy);color:#fff;border:none;border-radius:.7rem;
+  font-family:'Poppins',sans-serif;font-weight:600;padding:.8rem 2.4rem;
+  transition:all .3s ease;
+}
+.btn-submit:hover{background:var(--blue);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.map-card{
+  border-radius:1.3rem;overflow:hidden;box-shadow:var(--shadow-md);
+  border:1px solid #e8edf5;height:100%;min-height:420px;position:relative;background:#e9eff7;
+}
+.map-card iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+.map-overlay-card{
+  position:absolute;left:1.1rem;bottom:1.1rem;background:#fff;border-radius:1rem;
+  box-shadow:var(--shadow-lg);padding:1rem 1.2rem;max-width:300px;
+}
+.map-overlay-card h6{font-weight:700;color:var(--navy);margin:0 0 .25rem}
+.map-overlay-card p{font-size:.84rem;color:var(--muted);margin:0 0 .6rem}
+.btn-directions{
+  display:inline-flex;align-items:center;gap:.45rem;background:var(--gold);color:var(--navy);
+  border-radius:.6rem;padding:.5rem 1.1rem;font-weight:700;font-size:.86rem;text-decoration:none;
+  transition:all .25s ease;
+}
+.btn-directions:hover{background:#ffb92e;color:var(--navy);transform:translateY(-2px)}
+
+/* ---------- Motto strip ---------- */
+.motto-strip{
+  background:linear-gradient(115deg,var(--navy),#14417b);border-radius:1.4rem;color:#fff;
+  padding:44px 40px;position:relative;overflow:hidden;
+}
+.motto-strip::before{
+  content:"";position:absolute;inset:0;opacity:.5;
+  background-image:radial-gradient(rgba(255,255,255,.12) 1.5px,transparent 1.5px);background-size:24px 24px;
+}
+.motto-strip .quote-mark{color:var(--gold);font-size:2.6rem;line-height:1}
+.motto-strip h3{font-weight:800;font-style:italic}
+.motto-strip p{color:#c7d5ec;margin:0}
+
+@media (max-width: 991.98px){
+  .page-hero{padding:52px 0 92px}
+  .ph-visual{height:300px;margin-top:.5rem}
+  .ph-1{height:200px}
+  .ph-2{height:150px}
+  .map-card{min-height:340px;margin-top:1rem}
+}

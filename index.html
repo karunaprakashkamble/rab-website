@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R.A. Bhageria Educational Academy | Eksal, Bharuch, Gujarat</title>
+<meta name="description" content="R.A. Bhageria Educational Academy, Eksal, Bharuch — a modern CBSE school managed by Lala Govindramjee Charitable Society, New Delhi. Admissions open for 2026-27.">
+
+<!-- Bootstrap 5 (local) -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons (local) -->
+<link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR (single) ================= -->
+<nav class="navbar navbar-expand-xl navbar-main sticky-top" id="mainNav">
+  <div class="container-fluid px-3 px-lg-4">
+    <a class="navbar-brand d-flex align-items-center gap-2 me-2" href="#home">
+      <img src="images/logo.png" alt="R.A. Bhageria Educational Academy logo" class="brand-logo">
+      <div>
+        <div class="brand-name">R.A. Bhageria Educational Academy</div>
+        <div class="brand-tag">Managed by Lala Govindramjee Charitable Society, New Delhi</div>
+        <div class="brand-loc"><i class="bi bi-geo-alt-fill me-1"></i>Eksal, Bharuch, Gujarat</div>
+      </div>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-label="Menu">
+      <i class="bi bi-list fs-2"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end d-none d-xl-flex">
+      <div class="nav-strip">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="#home"><i class="bi bi-house-door-fill"></i>Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#about" data-bs-toggle="dropdown"><i class="bi bi-people-fill"></i>About</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html">About Us</a></li>
+              <li><a class="dropdown-item" href="management-staff.html">Management &amp; Staff</a></li>
+              <li><a class="dropdown-item" href="vision-mission.html">Vision &amp; Mission</a></li>
+              <li><a class="dropdown-item" href="about.html#faq">FAQs</a></li>
+              <li><a class="dropdown-item" href="about.html#contact-us">Contact &amp; Location</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#admission"><i class="bi bi-person-vcard-fill"></i>Admission</a></li>
+          <li class="nav-item"><a class="nav-link" href="#academics"><i class="bi bi-journal-bookmark-fill"></i>Curriculum</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery"><i class="bi bi-images"></i>Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news"><i class="bi bi-newspaper"></i>News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-envelope-fill"></i>Contact</a></li>
+          <li class="nav-item ms-1">
+            <a class="portal-btn" href="#">
+              <span class="portal-ic"><i class="bi bi-person-fill"></i></span> Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile offcanvas menu -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav">
+  <div class="offcanvas-header">
+    <h5 class="mb-0 font-display fw-bold" style="color:var(--navy)">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-1">
+      <li class="nav-item"><a class="nav-link" href="#home" data-bs-dismiss="offcanvas">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="management-staff.html">Management &amp; Staff</a></li>
+      <li class="nav-item"><a class="nav-link" href="vision-mission.html">Vision &amp; Mission</a></li>
+      <li class="nav-item"><a class="nav-link" href="#admission" data-bs-dismiss="offcanvas">Admission</a></li>
+      <li class="nav-item"><a class="nav-link" href="#academics" data-bs-dismiss="offcanvas">Curriculum</a></li>
+      <li class="nav-item"><a class="nav-link" href="#gallery" data-bs-dismiss="offcanvas">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="#news" data-bs-dismiss="offcanvas">News &amp; Events</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact Us</a></li>
+      <li class="nav-item mt-3">
+        <a class="portal-btn" href="#"><span class="portal-ic"><i class="bi bi-person-fill"></i></span> Login</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- ================= HERO (full-bleed blurred photo + bold text) ================= -->
+<header class="hero" id="home">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5500" data-bs-wrap="true" data-bs-touch="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="slide-bg bg-1"></div>
+        <div class="slide-overlay"></div>
+        <div class="container">
+          <div class="col-lg-8 col-xl-7">
+            <h1 class="hero-title">Strong Values,<br>Brighter Tomorrows</h1>
+            <p class="hero-quote">"Where knowledge, character and confidence grow together."</p>
+            <a href="#contact" class="btn btn-enquire">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="slide-bg bg-2"></div>
+        <div class="slide-overlay"></div>
+        <div class="container">
+          <div class="col-lg-8 col-xl-7">
+            <h1 class="hero-title">Learning Through Play,<br>Growing Every Day</h1>
+            <p class="hero-quote">"Bright play zones and caring teachers build confident little learners."</p>
+            <a href="#gallery" class="btn btn-enquire">View Gallery</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="slide-bg bg-3"></div>
+        <div class="slide-overlay"></div>
+        <div class="container">
+          <div class="col-lg-8 col-xl-7">
+            <h1 class="hero-title">Where Every Child<br>Learns by Doing</h1>
+            <p class="hero-quote">"Hands-on activities make learning meaningful, memorable and fun."</p>
+            <a href="#academics" class="btn btn-enquire">Our Curriculum</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <div class="slide-bg bg-4"></div>
+        <div class="slide-overlay"></div>
+        <div class="container">
+          <div class="col-lg-8 col-xl-7">
+            <h1 class="hero-title">Care Beyond<br>the Classroom</h1>
+            <p class="hero-quote">"Healthy meals, safe spaces and values that last a lifetime."</p>
+            <a href="#admission" class="btn btn-enquire">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= NOTICE TICKER ================= -->
+<div class="ticker-wrap d-flex align-items-stretch">
+  <div class="ticker-label"><i class="bi bi-megaphone-fill"></i> NOTICES</div>
+  <div class="ticker">
+    <div class="ticker-track">
+      <span><i class="bi bi-star-fill"></i>Admission Open 2026-2027 — Enroll now for a transformative learning experience. Contact us at +91 63581 59567</span>
+      <span><i class="bi bi-calendar-event-fill"></i>Independence Day celebration on 15th August at the school ground</span>
+      <span><i class="bi bi-palette-fill"></i>Thumb Printing Activity conducted for Pre-Primary students</span>
+      <span><i class="bi bi-bus-front-fill"></i>School transport facility available across Bharuch district</span>
+      <span><i class="bi bi-star-fill"></i>Admission Open 2026-2027 — Enroll now for a transformative learning experience. Contact us at +91 63581 59567</span>
+      <span><i class="bi bi-calendar-event-fill"></i>Independence Day celebration on 15th August at the school ground</span>
+      <span><i class="bi bi-palette-fill"></i>Thumb Printing Activity conducted for Pre-Primary students</span>
+      <span><i class="bi bi-bus-front-fill"></i>School transport facility available across Bharuch district</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= QUICK LINKS ================= -->
+<div class="container quick-wrap">
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-3 reveal">
+      <a href="#admission" class="quick-card qc-blue">
+        <div class="ic"><i class="bi bi-pencil-square"></i></div>
+        <h5>Admission 2026-27</h5>
+        <p>Seats open from Nursery onwards. Simple three-step admission process.</p>
+        <span class="go">Apply Now <i class="bi bi-arrow-right"></i></span>
+      </a>
+    </div>
+    <div class="col-md-6 col-lg-3 reveal" data-delay="1">
+      <a href="#" class="quick-card qc-gold">
+        <div class="ic"><i class="bi bi-file-earmark-text"></i></div>
+        <h5>Mandatory Disclosures</h5>
+        <p>School information, certificates and documents as per CBSE norms.</p>
+        <span class="go">View Documents <i class="bi bi-arrow-right"></i></span>
+      </a>
+    </div>
+    <div class="col-md-6 col-lg-3 reveal" data-delay="2">
+      <a href="#academics" class="quick-card qc-teal">
+        <div class="ic"><i class="bi bi-book"></i></div>
+        <h5>Curriculum</h5>
+        <p>Activity-based, NEP-aligned learning from Pre-Primary to higher classes.</p>
+        <span class="go">Explore <i class="bi bi-arrow-right"></i></span>
+      </a>
+    </div>
+    <div class="col-md-6 col-lg-3 reveal" data-delay="3">
+      <a href="#contact" class="quick-card qc-purple">
+        <div class="ic"><i class="bi bi-chat-dots"></i></div>
+        <h5>Talk to Us</h5>
+        <p>Have a question? Reach the school office — we're happy to help.</p>
+        <span class="go">Contact <i class="bi bi-arrow-right"></i></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow c-blue"><span class="dot"></span> About Our School</span>
+      <h2 class="section-title">Welcome to R.A. Bhageria Educational Academy</h2>
+    </div>
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 reveal">
+        <div class="about-collage">
+          <div class="collage-ring"></div>
+          <div class="c-photo c-main"><img src="images/activity-thumbprint.jpg" alt="Students doing thumb printing activity"></div>
+          <div class="c-photo c-sm c1"><img src="images/play-area.jpg" alt="Indoor play zone"></div>
+          <div class="c-photo c-sm c2"><img src="images/dining-hall.jpg" alt="Dining hall"></div>
+          <div class="c-photo c-sm c3"><img src="images/classroom-2.jpg" alt="Classroom activity"></div>
+          <div class="c-photo c-sm c4"><img src="images/activity-2.jpg" alt="Activity time"></div>
+          <i class="bi bi-stars deco d1" aria-hidden="true"></i>
+          <i class="bi bi-heart-fill deco d2" aria-hidden="true"></i>
+          <i class="bi bi-sun-fill deco d3" aria-hidden="true"></i>
+          <i class="bi bi-balloon-heart-fill deco d4" aria-hidden="true"></i>
+          <i class="bi bi-star-fill deco d5" aria-hidden="true"></i>
+          <div class="collage-sticker"><span>100%</span>Commitment<br>to Every Child</div>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal" data-delay="1">
+        <p class="text-muted mb-3">At R.A. Bhageria Educational Academy, we are dedicated to nurturing young minds and shaping future leaders. Established with a vision to provide quality education in a holistic environment, our academy combines academic excellence with co-curricular and extra-curricular activities.</p>
+        <p class="text-muted mb-4">We strive to foster creativity, critical thinking and ethical values in every student, ensuring they grow into responsible, confident and compassionate individuals. With state-of-the-art infrastructure, experienced faculty and a supportive learning atmosphere, we empower students to achieve their full potential and prepare them for a successful journey in life.</p>
+        <div class="about-point">
+          <div class="ic" style="background:var(--blue-soft);color:var(--blue)"><i class="bi bi-mortarboard"></i></div>
+          <div><h6>Quality Education</h6><p>A balanced curriculum that builds strong academic foundations along with life skills.</p></div>
+        </div>
+        <div class="about-point">
+          <div class="ic" style="background:var(--teal-soft);color:var(--teal)"><i class="bi bi-shield-check"></i></div>
+          <div><h6>Safe &amp; Caring Campus</h6><p>A secure environment with attentive staff, clean classrooms and dedicated play zones.</p></div>
+        </div>
+        <div class="about-point">
+          <div class="ic" style="background:var(--orange-soft);color:var(--orange)"><i class="bi bi-puzzle"></i></div>
+          <div><h6>Activity-Based Learning</h6><p>Hands-on projects and creative activities make concepts come alive for young learners.</p></div>
+        </div>
+        <a href="#" class="btn btn-navy mt-3">Know More About Us <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats py-5">
+  <div class="container position-relative py-3">
+    <div class="row g-4">
+      <div class="col-6 col-lg-3 reveal">
+        <div class="stat-box">
+          <div class="ic" style="background:rgba(247,169,19,.18);color:var(--gold)"><i class="bi bi-people-fill"></i></div>
+          <div class="stat-num"><span class="counter" data-target="500">0</span><small>+</small></div>
+          <div class="stat-lbl">Happy Students</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 reveal" data-delay="1">
+        <div class="stat-box">
+          <div class="ic" style="background:rgba(45,212,191,.16);color:#5eead4"><i class="bi bi-person-video3"></i></div>
+          <div class="stat-num"><span class="counter" data-target="30">0</span><small>+</small></div>
+          <div class="stat-lbl">Dedicated Teachers</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 reveal" data-delay="2">
+        <div class="stat-box">
+          <div class="ic" style="background:rgba(150,120,232,.2);color:#c4b0f5"><i class="bi bi-door-open-fill"></i></div>
+          <div class="stat-num"><span class="counter" data-target="40">0</span><small>+</small></div>
+          <div class="stat-lbl">Modern Classrooms</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 reveal" data-delay="3">
+        <div class="stat-box">
+          <div class="ic" style="background:rgba(238,108,43,.2);color:#fdba74"><i class="bi bi-trophy-fill"></i></div>
+          <div class="stat-num"><span class="counter" data-target="100">0</span><small>%</small></div>
+          <div class="stat-lbl">Focus on Every Child</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FACILITIES ================= -->
+<section class="section facilities-sec" id="facilities">
+  <span class="fshape fs1"></span>
+  <span class="fshape fs2"></span>
+  <span class="fshape fs3"></span>
+  <span class="fshape fs4"></span>
+  <i class="bi bi-stars deco fd1" aria-hidden="true"></i>
+  <i class="bi bi-star-fill deco fd2" aria-hidden="true"></i>
+  <div class="container position-relative">
+    <div class="section-head reveal">
+      <span class="eyebrow c-teal"><span class="dot"></span> Campus Facilities</span>
+      <h2 class="section-title">Everything a Child Needs to Learn &amp; Grow</h2>
+      <p class="section-sub">Our campus is designed around children — safe, bright and full of opportunities to explore.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="facility-card">
+          <div class="ic" style="background:var(--blue-soft);color:var(--blue)"><i class="bi bi-easel2"></i></div>
+          <h5>Smart Classrooms</h5>
+          <p>Spacious, well-lit classrooms designed for interactive and engaging lessons.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" data-delay="1">
+        <div class="facility-card">
+          <div class="ic" style="background:var(--gold-soft);color:#b97c05"><i class="bi bi-dribbble"></i></div>
+          <h5>Indoor Play Zone</h5>
+          <p>A dedicated, colourful play area where our youngest students learn through play.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" data-delay="2">
+        <div class="facility-card">
+          <div class="ic" style="background:var(--teal-soft);color:var(--teal)"><i class="bi bi-book-half"></i></div>
+          <h5>Library &amp; Reading Corner</h5>
+          <p>Age-appropriate books that build a lifelong love for reading and imagination.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="facility-card">
+          <div class="ic" style="background:var(--purple-soft);color:var(--purple)"><i class="bi bi-palette"></i></div>
+          <h5>Art &amp; Activity Rooms</h5>
+          <p>Creative spaces for painting, craft and hands-on activities like thumb printing.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" data-delay="1">
+        <div class="facility-card">
+          <div class="ic" style="background:var(--orange-soft);color:var(--orange)"><i class="bi bi-bus-front"></i></div>
+          <h5>Safe Transport</h5>
+          <p>School van facility with trained staff covering nearby villages and towns.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" data-delay="2">
+        <div class="facility-card">
+          <div class="ic" style="background:var(--rose-soft);color:var(--rose)"><i class="bi bi-heart-pulse"></i></div>
+          <h5>Health &amp; Safety</h5>
+          <p>CCTV-monitored campus, first-aid support and strict child-safety practices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACADEMICS ================= -->
+<section class="section academics" id="academics">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow c-purple"><span class="dot"></span> Academics</span>
+      <h2 class="section-title">A Clear Learning Path for Every Stage</h2>
+      <p class="section-sub">Our NEP-aligned curriculum grows with your child — from playful beginnings to confident scholarship.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="stage-card st-1">
+          <div class="grade">Nursery – KG</div>
+          <h5>Pre-Primary</h5>
+          <p>Play-way method, phonics, rhymes, motor-skill activities and joyful discovery.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal" data-delay="1">
+        <div class="stage-card st-2">
+          <div class="grade">Class 1 – 5</div>
+          <h5>Primary</h5>
+          <p>Strong foundations in literacy, numeracy and environmental awareness.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal" data-delay="2">
+        <div class="stage-card st-3">
+          <div class="grade">Class 6 – 8</div>
+          <h5>Middle School</h5>
+          <p>Concept-driven learning in science, maths, languages and computers.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal" data-delay="3">
+        <div class="stage-card st-4">
+          <div class="grade">Class 9 onwards</div>
+          <h5>Secondary</h5>
+          <p>Focused board preparation with mentoring, assessments and career guidance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEWS & EVENTS ================= -->
+<section class="section" id="news" style="background:#fff">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow c-orange"><span class="dot"></span> News &amp; Events</span>
+      <h2 class="section-title">Life at R.A. Bhageria</h2>
+      <p class="section-sub">A glimpse of the latest happenings, celebrations and activities on campus.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="news-card nc-1">
+          <div class="thumb"><img src="images/activity-thumbprint.jpg" alt="Thumb printing activity by pre-primary students"></div>
+          <div class="news-body">
+            <span class="news-date"><i class="bi bi-calendar3"></i> August 2026</span>
+            <h6>Thumb Printing Activity — Pre-Primary</h6>
+            <p>Our little ones created a beautiful tree of thumb prints, learning colours, counting and teamwork.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" data-delay="1">
+        <div class="news-card nc-2">
+          <div class="thumb"><img src="images/play-area.jpg" alt="Students enjoying the indoor play zone"></div>
+          <div class="news-body">
+            <span class="news-date"><i class="bi bi-calendar3"></i> August 2026</span>
+            <h6>Indoor Play Zone in Full Swing</h6>
+            <p>Slides, see-saws and ride-ons — our play zone keeps young students active, happy and healthy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" data-delay="2">
+        <div class="news-card nc-3">
+          <div class="thumb"><img src="images/classroom-2.jpg" alt="Classroom activity session"></div>
+          <div class="news-body">
+            <span class="news-date"><i class="bi bi-calendar3"></i> August 2026</span>
+            <h6>Hands-On Learning in Classrooms</h6>
+            <p>Group activities help students build social skills and understand concepts by doing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow c-rose"><span class="dot"></span> Photo Gallery</span>
+      <h2 class="section-title">Moments from Our Campus</h2>
+      <p class="section-sub">Real moments, real smiles — captured across our school.</p>
+    </div>
+    <div class="row g-3">
+      <div class="col-lg-6 reveal">
+        <a class="g-item tall d-block" href="images/school-building-hd.jpg" target="_blank">
+          <img src="images/school-building-hd.jpg" alt="School building with the national flag">
+          <span class="cap"><i class="bi bi-building me-1"></i> Our Campus</span>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-6 reveal" data-delay="1">
+            <a class="g-item d-block" href="images/activity-thumbprint.jpg" target="_blank">
+              <img src="images/activity-thumbprint.jpg" alt="Thumb printing activity">
+              <span class="cap"><i class="bi bi-palette me-1"></i> Art Activity</span>
+            </a>
+          </div>
+          <div class="col-6 reveal" data-delay="2">
+            <a class="g-item d-block" href="images/play-area.jpg" target="_blank">
+              <img src="images/play-area.jpg" alt="Indoor play area">
+              <span class="cap"><i class="bi bi-dribbble me-1"></i> Play Zone</span>
+            </a>
+          </div>
+          <div class="col-6 reveal" data-delay="2">
+            <a class="g-item d-block" href="images/dining-hall.jpg" target="_blank">
+              <img src="images/dining-hall.jpg" alt="Students having lunch in the dining hall">
+              <span class="cap"><i class="bi bi-cup-hot me-1"></i> Dining Hall</span>
+            </a>
+          </div>
+          <div class="col-6 reveal" data-delay="3">
+            <a class="g-item d-block" href="images/activity-2.jpg" target="_blank">
+              <img src="images/activity-2.jpg" alt="Students during activity time">
+              <span class="cap"><i class="bi bi-stars me-1"></i> Activity Time</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4 reveal">
+      <a href="#" class="btn btn-navy">View Full Gallery <i class="bi bi-images ms-1"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section" id="testimonials" style="background:#fff">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow c-blue"><span class="dot"></span> Parent Voices</span>
+      <h2 class="section-title">What Parents Say About Us</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal">
+        <div class="testi-card">
+          <div class="quote" style="color:var(--blue)"><i class="bi bi-quote"></i></div>
+          <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p>My daughter runs to school every morning! The teachers are caring and the activity-based learning keeps her excited about every new day.</p>
+          <div class="testi-who">
+            <div class="av" style="background:linear-gradient(135deg,#1a6fd4,#3b8bee)">P</div>
+            <div><h6>Parent Name</h6><span>Parent, Pre-Primary</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal" data-delay="1">
+        <div class="testi-card">
+          <div class="quote" style="color:var(--teal)"><i class="bi bi-quote"></i></div>
+          <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p>A clean, safe and modern campus right here in our area. The school van service makes daily travel completely worry-free for us.</p>
+          <div class="testi-who">
+            <div class="av" style="background:linear-gradient(135deg,#0d9488,#2dd4bf)">P</div>
+            <div><h6>Parent Name</h6><span>Parent, Class 3</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal" data-delay="2">
+        <div class="testi-card">
+          <div class="quote" style="color:var(--orange)"><i class="bi bi-quote"></i></div>
+          <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p>Teachers know every child personally and share regular updates. We can see real improvement in our son's confidence and studies.</p>
+          <div class="testi-who">
+            <div class="av" style="background:linear-gradient(135deg,#ee6c2b,#f7a913)">P</div>
+            <div><h6>Parent Name</h6><span>Parent, Class 6</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA / ADMISSION ================= -->
+<section class="section" id="admission">
+  <div class="container">
+    <div class="cta reveal">
+      <div class="row align-items-center position-relative g-4">
+        <div class="col-lg-8">
+          <span class="eyebrow c-gold" style="background:rgba(247,169,19,.18);color:var(--gold)"><span class="dot"></span> Admission Open 2026-2027</span>
+          <h2 class="mt-2">Enroll Now for a Transformative Learning Experience</h2>
+          <p class="mt-2 mb-0">Seats are limited for the new academic session. Visit the campus, meet our teachers, and complete a simple admission process — or call us at <a href="tel:+916358159567" style="color:var(--gold);font-weight:700;text-decoration:none">+91 63581 59567</a>.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="#contact" class="btn btn-gold btn-lg mb-2 me-2"><i class="bi bi-pencil-square me-2"></i>Enquire Now</a>
+          <a href="tel:+916358159567" class="btn btn-outline-light-2 btn-lg mb-2"><i class="bi bi-telephone me-2"></i>Call Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GUJARAT HERITAGE BAND ================= -->
+<div class="gujarat-band" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" preserveAspectRatio="xMidYMax slice">
+  <g fill="#081a35">
+    <!-- ground -->
+    <path d="M0,200 L0,182 Q360,175 720,178 Q1080,181 1440,176 L1440,200 Z"/>
+
+    <!-- chhatri pavilion (left) -->
+    <g>
+      <path d="M100,150 Q130,120 160,150 Z"/>
+      <rect x="128" y="112" width="4" height="10"/>
+      <circle cx="130" cy="110" r="3"/>
+      <rect x="94" y="150" width="72" height="6"/>
+      <rect x="100" y="156" width="5" height="26"/>
+      <rect x="127" y="156" width="5" height="26"/>
+      <rect x="154" y="156" width="5" height="26"/>
+      <rect x="90" y="180" width="80" height="6"/>
+    </g>
+
+    <!-- temple shikhara -->
+    <g>
+      <rect x="270" y="168" width="120" height="16"/>
+      <rect x="282" y="160" width="96" height="8"/>
+      <path d="M300,160 Q306,96 330,88 Q354,96 360,160 Z"/>
+      <ellipse cx="330" cy="86" rx="11" ry="4"/>
+      <rect x="328" y="74" width="4" height="10"/>
+      <circle cx="330" cy="72" r="3"/>
+      <rect x="329" y="56" width="2" height="16"/>
+      <polygon points="331,56 348,61 331,66"/>
+    </g>
+
+    <!-- stepwell arcade -->
+    <g>
+      <rect x="464" y="142" width="232" height="8"/>
+      <path fill-rule="evenodd" d="M470,182 L470,150 L690,150 L690,182 Z
+        M482,182 L482,166 A11,11 0 0 1 504,166 L504,182 Z
+        M518,182 L518,166 A11,11 0 0 1 540,166 L540,182 Z
+        M554,182 L554,166 A11,11 0 0 1 576,166 L576,182 Z
+        M590,182 L590,166 A11,11 0 0 1 612,166 L612,182 Z
+        M626,182 L626,166 A11,11 0 0 1 648,166 L648,182 Z"/>
+    </g>
+
+    <!-- Statue of Unity -->
+    <g>
+      <rect x="816" y="168" width="58" height="16"/>
+      <rect x="826" y="158" width="38" height="10"/>
+      <polygon points="833,158 857,158 854,86 836,86"/>
+      <polygon points="836,86 854,86 852,72 838,72"/>
+      <circle cx="845" cy="64" r="7"/>
+      <polygon points="833,90 827,132 831,134 837,92"/>
+      <polygon points="857,90 863,132 859,134 853,92"/>
+    </g>
+
+    <!-- sun-temple stepped structure -->
+    <g>
+      <rect x="990" y="168" width="120" height="16"/>
+      <rect x="1002" y="156" width="96" height="12"/>
+      <rect x="1014" y="144" width="72" height="12"/>
+      <rect x="1026" y="132" width="48" height="12"/>
+      <path d="M1038,132 Q1050,118 1062,132 Z"/>
+      <rect x="1049" y="112" width="3" height="8"/>
+    </g>
+
+    <!-- chhatri pavilion (right) -->
+    <g>
+      <path d="M1280,150 Q1310,120 1340,150 Z"/>
+      <rect x="1308" y="112" width="4" height="10"/>
+      <circle cx="1310" cy="110" r="3"/>
+      <rect x="1274" y="150" width="72" height="6"/>
+      <rect x="1280" y="156" width="5" height="26"/>
+      <rect x="1307" y="156" width="5" height="26"/>
+      <rect x="1334" y="156" width="5" height="26"/>
+      <rect x="1270" y="180" width="80" height="6"/>
+    </g>
+  </g>
+</svg>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact">
+  <!-- brand + newsletter row -->
+  <div class="container foot-head">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <div class="d-flex align-items-center gap-3">
+          <div class="foot-logo-card"><img src="images/logo.png" alt="School crest"></div>
+          <div>
+            <div class="foot-brand">R.A. Bhageria Educational Academy</div>
+            <div class="foot-society">Managed by Lala Govindramjee Charitable Society, New Delhi</div>
+            <div class="foot-motto">Service Before Self</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <div class="foot-news-title">Stay Updated</div>
+        <div class="foot-news-sub">School News &amp; Announcements</div>
+        <form class="newsletter mt-2" onsubmit="return subscribeNews(event, this)">
+          <input type="email" required placeholder="Enter your email id" aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- link columns -->
+  <div class="container foot-mid">
+    <div class="row g-4">
+      <div class="col-md-4 ps-md-5">
+        <h6>About Us</h6>
+        <ul class="foot-links p-0">
+          <li><a href="#about">About School</a></li>
+          <li><a href="management-staff.html">Management &amp; Staff</a></li>
+          
+          <li><a href="#">Mandatory Disclosures</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 ps-md-5">
+        <h6>Useful Links</h6>
+        <ul class="foot-links p-0">
+          <li><a href="#academics">Curriculum</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#admission">Enquiry Form</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 ps-md-5">
+        <h6>Contact Us</h6>
+        <ul class="foot-contact p-0">
+          <li><i class="bi bi-geo-alt-fill"></i><span>Eksal, Bharuch, Gujarat, India – 392130</span></li>
+          <li><i class="bi bi-telephone-fill"></i><span><a href="tel:+916358159567">+91 63581 59567</a></span></li>
+          <li><i class="bi bi-envelope-fill"></i><span><a href="mailto:rabhageria.education@gmail.com">rabhageria.education@gmail.com</a></span></li>
+        </ul>
+        <div class="foot-social mt-2">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/916358159567" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- legal bar -->
+  <div class="foot-bottom">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <span>© 2026 R.A. Bhageria Educational Academy. All Rights Reserved.</span>
+      <span class="foot-legal">
+        <a href="#">Sitemap</a><em>|</em>
+        <a href="#">Terms &amp; Conditions</a><em>|</em>
+        <a href="#">Privacy Policy</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/916358159567" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<button id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Bootstrap JS (local) -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

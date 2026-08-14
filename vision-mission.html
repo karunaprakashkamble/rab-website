@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vision &amp; Mission | R.A. Bhageria Educational Academy, Eksal, Bharuch</title>
+<meta name="description" content="Vision, mission, core values and the motto Service Before Self of R.A. Bhageria Educational Academy, Eksal, Bharuch.">
+
+<!-- Bootstrap 5 (local) -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons (local) -->
+<link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Shared site styles + page styles -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/vision-mission.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-xl navbar-main sticky-top" id="mainNav">
+  <div class="container-fluid px-3 px-lg-4">
+    <a class="navbar-brand d-flex align-items-center gap-2 me-2" href="index.html">
+      <img src="images/logo.png" alt="R.A. Bhageria Educational Academy logo" class="brand-logo">
+      <div>
+        <div class="brand-name">R.A. Bhageria Educational Academy</div>
+        <div class="brand-tag">Managed by Lala Govindramjee Charitable Society, New Delhi</div>
+        <div class="brand-loc"><i class="bi bi-geo-alt-fill me-1"></i>Eksal, Bharuch, Gujarat</div>
+      </div>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-label="Menu">
+      <i class="bi bi-list fs-2"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end d-none d-xl-flex">
+      <div class="nav-strip">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i>Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-people-fill"></i>About</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html">About Us</a></li>
+              <li><a class="dropdown-item" href="management-staff.html">Management &amp; Staff</a></li>
+              <li><a class="dropdown-item" href="vision-mission.html">Vision &amp; Mission</a></li>
+              <li><a class="dropdown-item" href="about.html#faq">FAQs</a></li>
+              <li><a class="dropdown-item" href="about.html#contact-us">Contact &amp; Location</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#admission"><i class="bi bi-person-vcard-fill"></i>Admission</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#academics"><i class="bi bi-journal-bookmark-fill"></i>Curriculum</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#gallery"><i class="bi bi-images"></i>Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#news"><i class="bi bi-newspaper"></i>News</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact"><i class="bi bi-envelope-fill"></i>Contact</a></li>
+          <li class="nav-item ms-1">
+            <a class="portal-btn" href="#">
+              <span class="portal-ic"><i class="bi bi-person-fill"></i></span> Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile offcanvas menu -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav">
+  <div class="offcanvas-header">
+    <h5 class="mb-0 font-display fw-bold" style="color:var(--navy)">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-1">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="management-staff.html">Management &amp; Staff</a></li>
+      <li class="nav-item"><a class="nav-link" href="vision-mission.html">Vision &amp; Mission</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html#admission">Admission</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html#academics">Curriculum</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html#news">News &amp; Events</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact Us</a></li>
+      <li class="nav-item mt-3">
+        <a class="portal-btn" href="#"><span class="portal-ic"><i class="bi bi-person-fill"></i></span> Login</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- ================= PAGE HERO ================= -->
+<header class="page-hero">
+  <div class="ph-glow g1"></div>
+  <div class="ph-glow g2"></div>
+  <div class="container position-relative">
+    <h1 class="reveal">Vision &amp; <span class="accent">Mission</span></h1>
+    <p class="mt-3 reveal" data-delay="1">Guiding principles that shape our journey towards excellence in education.</p>
+  </div>
+  <div class="ph-curve" aria-hidden="true">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,70 L0,42 Q360,2 720,30 Q1080,56 1440,22 L1440,70 Z" fill="#f6f8fc"/></svg>
+  </div>
+</header>
+
+<!-- ================= SECTION SUB-NAV ================= -->
+<div class="sub-nav">
+  <div class="container">
+    <div class="inner">
+      <a href="#vision" class="active"><i class="bi bi-eye-fill"></i> Our Vision</a>
+      <a href="#mission"><i class="bi bi-flag-fill"></i> Our Mission</a>
+      <a href="#values"><i class="bi bi-gem"></i> Core Values</a>
+      <a href="#motto"><i class="bi bi-award-fill"></i> Our Motto</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= OUR VISION ================= -->
+<section class="section vision-sec" id="vision">
+  <span class="vshape vs1"></span>
+  <span class="vshape vs2"></span>
+  <div class="container position-relative">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-7 reveal">
+        <div class="vision-panel">
+          <div class="vision-icon"><i class="bi bi-eye-fill"></i></div>
+          <h2>Our Vision</h2>
+          <p>At R.A. Bhageria Educational Academy, our vision is to inspire young minds and shape confident, responsible and compassionate individuals. We provide a holistic learning environment that integrates academic excellence with co-curricular and experiential learning opportunities.</p>
+        </div>
+      </div>
+      <div class="col-lg-5 reveal" data-delay="1">
+        <div class="vision-art">
+          <div class="va-ring"></div>
+          <div class="va-photo va1"><img src="images/classroom-2.jpg" alt="Students learning in the classroom"></div>
+          <div class="va-photo va2"><img src="images/activity-thumbprint.jpg" alt="Students during a creative activity"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OUR MISSION ================= -->
+<section class="section mission-sec" id="mission">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow c-teal"><span class="dot"></span> Our Mission</span>
+      <h2 class="section-title">How We Turn Our Vision Into Practice</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="mission-card">
+          <div class="mission-num" style="background:linear-gradient(135deg,#1a6fd4,#3b8bee)">01</div>
+          <p>To cultivate learners who uphold the core values of <span class="mk">integrity, perseverance, resilience, humility and discipline</span>.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal" data-delay="1">
+        <div class="mission-card">
+          <div class="mission-num" style="background:linear-gradient(135deg,#0d9488,#2dd4bf)">02</div>
+          <p>To nurture <span class="mk">solution-oriented thinkers</span> who approach challenges with creativity and confidence.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal" data-delay="2">
+        <div class="mission-card">
+          <div class="mission-num" style="background:linear-gradient(135deg,#ee6c2b,#f7a913)">03</div>
+          <p>To guide students in becoming <span class="mk">mature, self-reliant individuals</span> who overcome adversity with determination.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal" data-delay="3">
+        <div class="mission-card">
+          <div class="mission-num" style="background:linear-gradient(135deg,#6d4fc4,#9678e8)">04</div>
+          <p>To promote a <span class="mk">global outlook, peace and mutual respect</span> through collaborations and exchange programs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CORE VALUES ================= -->
+<section class="section values-sec" id="values">
+  <span class="vshape vs3"></span>
+  <div class="container position-relative">
+    <div class="section-head reveal">
+      <span class="eyebrow c-purple"><span class="dot"></span> Our Core Values</span>
+      <h2 class="section-title">Six Values at the Heart of Our Academy</h2>
+    </div>
+    <div class="row g-4 core-grid">
+      <div class="col-6 col-md-4 col-lg-2 reveal">
+        <div class="core-card">
+          <div class="ic" style="background:var(--blue-soft);color:var(--blue)"><i class="bi bi-shield-check"></i></div>
+          <h5>Integrity</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 reveal">
+        <div class="core-card">
+          <div class="ic" style="background:var(--gold-soft);color:#b97c05"><i class="bi bi-trophy-fill"></i></div>
+          <h5>Excellence</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 reveal">
+        <div class="core-card">
+          <div class="ic" style="background:var(--rose-soft);color:var(--rose)"><i class="bi bi-heart-fill"></i></div>
+          <h5>Compassion</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 reveal">
+        <div class="core-card">
+          <div class="ic" style="background:var(--teal-soft);color:var(--teal)"><i class="bi bi-lightbulb-fill"></i></div>
+          <h5>Innovation</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 reveal">
+        <div class="core-card">
+          <div class="ic" style="background:var(--purple-soft);color:var(--purple)"><i class="bi bi-people-fill"></i></div>
+          <h5>Respect</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 reveal">
+        <div class="core-card">
+          <div class="ic" style="background:var(--orange-soft);color:var(--orange)"><i class="bi bi-globe2"></i></div>
+          <h5>Global Outlook</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OUR MOTTO ================= -->
+<section class="section motto-sec" id="motto">
+  <div class="container">
+    <div class="motto-quote reveal">
+      <span class="motto-eyebrow"><i class="bi bi-award-fill"></i> Our Motto</span>
+      <h2>"Service <span>Before</span> Self"</h2>
+      <p>Inspiring empathy, integrity and unity through purposeful education and action. Our motto is the cornerstone of the values we nurture at R.A. Bhageria Educational Academy — it teaches our students to put the needs of others above their own, fostering compassion, humility and responsibility.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="means-card">
+          <div class="ic"><i class="bi bi-hand-thumbs-up-fill"></i></div>
+          <h5>Putting Others First</h5>
+          <p>Recognizing and responding to the needs of others with empathy and kindness.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" data-delay="1">
+        <div class="means-card">
+          <div class="ic"><i class="bi bi-people-fill"></i></div>
+          <h5>Building Responsible Citizens</h5>
+          <p>Encouraging students to act ethically and contribute positively to society.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" data-delay="2">
+        <div class="means-card">
+          <div class="ic"><i class="bi bi-gift-fill"></i></div>
+          <h5>Developing a Spirit of Giving</h5>
+          <p>Instilling habits of generosity, from small acts of help to larger community service.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="means-card">
+          <div class="ic"><i class="bi bi-shield-fill-check"></i></div>
+          <h5>Strengthening Character &amp; Integrity</h5>
+          <p>Helping students grow in discipline, accountability and moral courage.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" data-delay="1">
+        <div class="means-card">
+          <div class="ic"><i class="bi bi-hearts"></i></div>
+          <h5>Fostering Unity &amp; Harmony</h5>
+          <p>Encouraging collaboration, mutual respect and social cohesion through service.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" data-delay="2">
+        <div class="means-card">
+          <div class="ic"><i class="bi bi-mortarboard-fill"></i></div>
+          <h5>Learning Through Service</h5>
+          <p>Carrying these lessons from classroom activities into real community initiatives.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="commit-band reveal">
+      <h4><i class="bi bi-patch-check-fill"></i> Our Commitment</h4>
+      <p>At R.A. Bhageria Educational Academy, this motto guides all aspects of learning — from classroom activities to community service initiatives. By embracing <span class="hl">"Service Before Self"</span>, we aim to shape students into compassionate leaders who act with integrity and purpose.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GUJARAT HERITAGE BAND + FOOTER ================= -->
+<div class="gujarat-band" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" preserveAspectRatio="xMidYMax slice">
+  <g fill="#081a35">
+    <!-- ground -->
+    <path d="M0,200 L0,182 Q360,175 720,178 Q1080,181 1440,176 L1440,200 Z"/>
+
+    <!-- chhatri pavilion (left) -->
+    <g>
+      <path d="M100,150 Q130,120 160,150 Z"/>
+      <rect x="128" y="112" width="4" height="10"/>
+      <circle cx="130" cy="110" r="3"/>
+      <rect x="94" y="150" width="72" height="6"/>
+      <rect x="100" y="156" width="5" height="26"/>
+      <rect x="127" y="156" width="5" height="26"/>
+      <rect x="154" y="156" width="5" height="26"/>
+      <rect x="90" y="180" width="80" height="6"/>
+    </g>
+
+    <!-- temple shikhara -->
+    <g>
+      <rect x="270" y="168" width="120" height="16"/>
+      <rect x="282" y="160" width="96" height="8"/>
+      <path d="M300,160 Q306,96 330,88 Q354,96 360,160 Z"/>
+      <ellipse cx="330" cy="86" rx="11" ry="4"/>
+      <rect x="328" y="74" width="4" height="10"/>
+      <circle cx="330" cy="72" r="3"/>
+      <rect x="329" y="56" width="2" height="16"/>
+      <polygon points="331,56 348,61 331,66"/>
+    </g>
+
+    <!-- stepwell arcade -->
+    <g>
+      <rect x="464" y="142" width="232" height="8"/>
+      <path fill-rule="evenodd" d="M470,182 L470,150 L690,150 L690,182 Z
+        M482,182 L482,166 A11,11 0 0 1 504,166 L504,182 Z
+        M518,182 L518,166 A11,11 0 0 1 540,166 L540,182 Z
+        M554,182 L554,166 A11,11 0 0 1 576,166 L576,182 Z
+        M590,182 L590,166 A11,11 0 0 1 612,166 L612,182 Z
+        M626,182 L626,166 A11,11 0 0 1 648,166 L648,182 Z"/>
+    </g>
+
+    <!-- Statue of Unity -->
+    <g>
+      <rect x="816" y="168" width="58" height="16"/>
+      <rect x="826" y="158" width="38" height="10"/>
+      <polygon points="833,158 857,158 854,86 836,86"/>
+      <polygon points="836,86 854,86 852,72 838,72"/>
+      <circle cx="845" cy="64" r="7"/>
+      <polygon points="833,90 827,132 831,134 837,92"/>
+      <polygon points="857,90 863,132 859,134 853,92"/>
+    </g>
+
+    <!-- sun-temple stepped structure -->
+    <g>
+      <rect x="990" y="168" width="120" height="16"/>
+      <rect x="1002" y="156" width="96" height="12"/>
+      <rect x="1014" y="144" width="72" height="12"/>
+      <rect x="1026" y="132" width="48" height="12"/>
+      <path d="M1038,132 Q1050,118 1062,132 Z"/>
+      <rect x="1049" y="112" width="3" height="8"/>
+    </g>
+
+    <!-- chhatri pavilion (right) -->
+    <g>
+      <path d="M1280,150 Q1310,120 1340,150 Z"/>
+      <rect x="1308" y="112" width="4" height="10"/>
+      <circle cx="1310" cy="110" r="3"/>
+      <rect x="1274" y="150" width="72" height="6"/>
+      <rect x="1280" y="156" width="5" height="26"/>
+      <rect x="1307" y="156" width="5" height="26"/>
+      <rect x="1334" y="156" width="5" height="26"/>
+      <rect x="1270" y="180" width="80" height="6"/>
+    </g>
+  </g>
+</svg>
+</div>
+
+<footer id="contact">
+  <div class="container foot-head">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <div class="d-flex align-items-center gap-3">
+          <div class="foot-logo-card"><img src="images/logo.png" alt="School crest"></div>
+          <div>
+            <div class="foot-brand">R.A. Bhageria Educational Academy</div>
+            <div class="foot-society">Managed by Lala Govindramjee Charitable Society, New Delhi</div>
+            <div class="foot-motto">Service Before Self</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <div class="foot-news-title">Stay Updated</div>
+        <div class="foot-news-sub">School News &amp; Announcements</div>
+        <form class="newsletter mt-2" onsubmit="return subscribeNews(event, this)">
+          <input type="email" required placeholder="Enter your email id" aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container foot-mid">
+    <div class="row g-4">
+      <div class="col-md-4 ps-md-5">
+        <h6>About Us</h6>
+        <ul class="foot-links p-0">
+          <li><a href="about.html#welcome">About School</a></li>
+          <li><a href="management-staff.html">Management &amp; Staff</a></li>
+          <li><a href="about.html#faq">FAQs</a></li>
+          <li><a href="#">Mandatory Disclosures</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 ps-md-5">
+        <h6>Useful Links</h6>
+        <ul class="foot-links p-0">
+          <li><a href="index.html#academics">Curriculum</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="about.html#contact-us">Enquiry Form</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 ps-md-5">
+        <h6>Contact Us</h6>
+        <ul class="foot-contact p-0">
+          <li><i class="bi bi-geo-alt-fill"></i><span>Eksal, Bharuch, Gujarat, India – 392130</span></li>
+          <li><i class="bi bi-telephone-fill"></i><span><a href="tel:+916358159567">+91 63581 59567</a></span></li>
+          <li><i class="bi bi-envelope-fill"></i><span><a href="mailto:rabhageria.education@gmail.com">rabhageria.education@gmail.com</a></span></li>
+        </ul>
+        <div class="foot-social mt-2">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/916358159567" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <span>© 2026 R.A. Bhageria Educational Academy. All Rights Reserved.</span>
+      <span class="foot-legal">
+        <a href="#">Sitemap</a><em>|</em>
+        <a href="#">Terms &amp; Conditions</a><em>|</em>
+        <a href="#">Privacy Policy</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/916358159567" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<button id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Bootstrap JS (local) -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+// sub-nav: highlight the section currently in view
+(function(){
+  const links = [...document.querySelectorAll('.sub-nav a')];
+  const secs = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY + 220;
+    let idx = 0;
+    secs.forEach((s, i) => { if (s.offsetTop <= y) idx = i; });
+    links.forEach((a, i) => a.classList.toggle('active', i === idx));
+  });
+})();
+</script>
+</body>
+</html>
