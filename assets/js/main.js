@@ -87,3 +87,13 @@ function clearOffcanvasLeftovers(){
 }
 window.addEventListener('pageshow', clearOffcanvasLeftovers);
 clearOffcanvasLeftovers();
+
+// ---------- Campus video: play on click, hide the overlay ----------
+function playCampusVideo(btn){
+  const v = document.getElementById('campusVideo');
+  if (!v) return;
+  btn.classList.add('hidden');
+  const p = v.play();
+  if (p && p.catch) p.catch(() => {});
+  v.addEventListener('pause', () => { if (v.currentTime === 0) btn.classList.remove('hidden'); });
+}
